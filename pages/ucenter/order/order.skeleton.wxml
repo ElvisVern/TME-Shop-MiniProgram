@@ -1,0 +1,67 @@
+<!--
+此文件为开发者工具生成，生成时间: 2022/10/3上午1:50:23
+使用方法：
+在 /Users/than/Desktop/TME-Shop/mini-program/pages/ucenter/order/order.wxml 引入模板
+
+```
+<import src="order.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+```
+
+在 /Users/than/Desktop/TME-Shop/mini-program/pages/ucenter/order/order.wxss 中引入样式
+```
+@import "./order.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="container">
+      <view class="orders">
+        <view class="order">
+          <view class="h">
+            <view class="l sk-transparent sk-text-32-8571-965 sk-text">订单编号：15</view>
+            <view class="l sk-transparent sk-text-32-8571-151 sk-text">时间：2022-10-02T15:47:37.000Z</view>
+            <view class="r sk-transparent sk-text-35-7143-833 sk-text">创建成功，待支付</view>
+          </view>
+          <view class="goods">
+            <view class="info">
+              <text class="name sk-transparent sk-text-16-6667-864 sk-text">是时候...</text>
+              <text class="number sk-transparent sk-text-16-6667-459 sk-text">张敬轩</text>
+            </view>
+            <view class="status"></view>
+          </view>
+        </view>
+        <view class="order">
+          <view class="h">
+            <view class="l sk-transparent sk-text-32-8571-142 sk-text">订单编号：16</view>
+            <view class="l sk-transparent sk-text-32-8571-49 sk-text">时间：2022-10-02T16:32:50.000Z</view>
+            <view class="r sk-transparent sk-text-35-7143-430 sk-text">创建成功，待支付</view>
+          </view>
+          <view class="goods">
+            <view class="info">
+              <text class="name sk-transparent sk-text-16-6667-624 sk-text">I Am What I Am</text>
+              <text class="number sk-transparent sk-text-16-6667-296 sk-text">张国荣</text>
+            </view>
+            <view class="status"></view>
+          </view>
+        </view>
+        <view class="order">
+          <view class="h">
+            <view class="l sk-transparent sk-text-32-8571-835 sk-text">订单编号：17</view>
+            <view class="l sk-transparent sk-text-32-8571-415 sk-text">时间：2022-10-02T17:39:05.000Z</view>
+            <view class="r sk-transparent sk-text-35-7143-663 sk-text">创建成功，待支付</view>
+          </view>
+          <view class="goods">
+            <view class="info">
+              <text class="name sk-transparent sk-text-16-6667-256 sk-text">忘忧草</text>
+              <text class="number sk-transparent sk-text-16-6667-317 sk-text">周华健</text>
+            </view>
+            <view class="status"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

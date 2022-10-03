@@ -1,0 +1,34 @@
+<import src="catalog.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+<view class="container">
+  <view class="catalog">
+    <scroll-view class="nav" scroll-y="true">
+        <view class="item {{ currentCategory.id == item.id ? 'active' : ''}}" wx:for="{{navList}}" wx:key="index"  data-id="{{item.id}}" data-index="{{index}}" bindtap="switchCate">{{item.name}}</view>
+    </scroll-view>
+    <scroll-view class="cate" scroll-y="true">
+        <navigator url="url" class="banner">
+            <image class="image" src="{{currentCategory.iconUrl}}" background-size="cover"></image>
+        </navigator>
+        <view class="hd">
+            <text class="line"></text>
+            <text class="txt">{{currentCategory.name}}</text>
+            <text class="line"></text>
+        </view>
+        <view class="bd">
+            <view class="item" wx:for="{{goods}}" wx:key="index">
+                <view class="flex">
+                  <view>
+                    <text style="margin-right: 20rpx;">{{index < 10 ? '0' + (index + 1) : index}}</text>
+                  </view>
+                  <view>
+                    <view bindtap="goGoodsDetail" data-data="{{item.id}}">
+                      <audio poster="{{item.cover}}" name="{{item.name}}" author="{{item.author}}" src="{{item.src}}" class="audio" controls loop style="width: 300rpx;"></audio>
+                    </view>
+                </view>
+                </view>
+                
+            </view>
+        </view>
+    </scroll-view>
+  </view>
+</view>

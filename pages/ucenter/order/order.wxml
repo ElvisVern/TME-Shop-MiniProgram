@@ -1,0 +1,21 @@
+<import src="order.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+<view class="container">
+    <view class="orders">
+        <view class="order" wx:for="{{orderList}}" wx:key="index">
+            <view class="h">
+                <view class="l">订单编号：{{item.id}}</view>
+                <view class="l">时间：{{item.createdAt}}</view>
+
+                <view class="r">{{item.orderStatus == 0 ? '创建成功，待支付' : '成功'}}</view>
+            </view>
+            <view class="goods">
+                <view class="info">
+                    <text class="name">{{item.goods.name}}</text>
+                    <text class="number">{{item.goods.author}}</text>
+                </view>
+                <view class="status"></view>
+            </view>
+        </view>
+    </view>
+</view>

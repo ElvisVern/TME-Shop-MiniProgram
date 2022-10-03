@@ -1,0 +1,92 @@
+<!--
+此文件为开发者工具生成，生成时间: 2022/10/3上午1:48:32
+使用方法：
+在 /Users/than/Desktop/TME-Shop/mini-program/pages/catalog/catalog.wxml 引入模板
+
+```
+<import src="catalog.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+```
+
+在 /Users/than/Desktop/TME-Shop/mini-program/pages/catalog/catalog.wxss 中引入样式
+```
+@import "./catalog.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="container">
+      <view class="catalog">
+        <scroll-view class="nav" scroll-y="true">
+          <view class="item active sk-transparent sk-text-30-2632-683 sk-text" data-id="1" data-index="0" style="background-position-x: 50%;">流行</view>
+          <view class="item sk-transparent sk-text-35-5263-47 sk-text" data-id="2" data-index="1" style="background-position-x: 50%;">华语</view>
+          <view class="item sk-transparent sk-text-35-5263-337 sk-text" data-id="3" data-index="2" style="background-position-x: 50%;">粤语</view>
+          <view class="item sk-transparent sk-text-35-5263-441 sk-text" data-id="4" data-index="3" style="background-position-x: 50%;">民谣</view>
+          <view class="item sk-transparent sk-text-35-5263-511 sk-text" data-id="5" data-index="4" style="background-position-x: 50%;">轻音</view>
+        </scroll-view>
+        <scroll-view class="cate" scroll-y="true">
+          <navigator class="banner">
+            <image background-size="cover" class="image sk-image"></image>
+          </navigator>
+          <view class="hd">
+            <text class="line"></text>
+            <text class="txt sk-transparent sk-text-14-2857-764 sk-text" style="background-position-x: 50%;">流行</text>
+            <text class="line"></text>
+          </view>
+          <view class="bd">
+            <view class="item">
+              <view class="flex">
+                <view>
+                  <text style="margin-right: 8px;" class="sk-transparent sk-opacity">01</text>
+                </view>
+                <view>
+                  <view data-data="2">
+                    <audio controls="true" loop="true" author="张敬轩" class="audio" name="是时候..." poster="https://p1.music.126.net/MbAMGidLob2YUEsw732PXw==/18815942488049510.jpg" src="true" style="width: 128px;"></audio>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="item">
+              <view class="flex">
+                <view>
+                  <text style="margin-right: 8px;" class="sk-transparent sk-text-14-2857-526 sk-text">02</text>
+                </view>
+                <view>
+                  <view data-data="3">
+                    <audio controls="true" loop="true" author="张学友" class="audio" name="饿狼传说" poster="https://p1.music.126.net/_XmjS2aWsr5bhYO5Xb_TEQ==/109951167227445989.jpg" src="true" style="width: 128px;"></audio>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="item">
+              <view class="flex">
+                <view>
+                  <text style="margin-right: 8px;" class="sk-transparent sk-text-14-2857-511 sk-text">03</text>
+                </view>
+                <view>
+                  <view data-data="4">
+                    <audio controls="true" loop="true" author="张国荣" class="audio" name="I Am What I Am" poster="https://p1.music.126.net/7wDg-DUN511nwSSPmOU5Xw==/109951165745388126.jpg" src="true" style="width: 128px;"></audio>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="item">
+              <view class="flex">
+                <view>
+                  <text style="margin-right: 8px;" class="sk-transparent sk-text-14-2857-193 sk-text">04</text>
+                </view>
+                <view>
+                  <view data-data="5">
+                    <audio controls="true" loop="true" author="周华健" class="audio" name="忘忧草" poster="https://p1.music.126.net/mniAI-y8It1ZSHjDCnNSIw==/109951167500595565.jpg" src="true" style="width: 128px;"></audio>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</template>

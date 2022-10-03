@@ -1,0 +1,26 @@
+<view class="container">
+  <swiper class="goodsimgs" indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+    <swiper-item wx:for="{{coverList}}" wx:key="index">
+      <image src="{{item}}" background-size="cover"></image>
+    </swiper-item>
+  </swiper>
+  <view class="goods-info">
+    <view class="c">
+      <text class="name">{{goods.name}}</text>
+      <text class="desc">{{goods.author}}</text>
+    </view>
+    <radio-group bindchange="radioChange">
+        <view class='label'>
+          <label class="ui-radio {{item.checked == true ? 'active' : ''}}" wx:for="{{priceList}}" wx:key="index">
+            <radio value="{{item.value}}" checked="{{item.checked}}" />
+            <text class="text">
+              {{item.currency == 'CNY' ? '￥' : '$'}}{{item.price}}{{item.type == 1 ? '/年' : item.type == 2 ? '/月' : '/天'}}
+            </text>
+          </label>
+        </view>
+      </radio-group>
+  </view>
+</view>
+<view class="bottom-btn">
+  <view class="c" bindtap="handleOrder">立即购买</view>
+</view>
